@@ -1,0 +1,22 @@
+../contribute/node_modules
+../donation/vendor
+../mpesa/node_modules
+
+../donation/.phpunit.cache
+../donation/public/build
+../donation/public/hot
+../donation/public/storage
+../donation/storage/*.key
+../donation/vendor
+../donation/.env
+../donation/.env.backup
+../donation/.env.production
+../donation/.phpunit.result.cache
+../donation/Homestead.json
+ ../donationHomestead.yaml
+../donation/auth.json
+../donation/npm-debug.log
+../donation/yarn-error.log
+../donation/.fleet
+../donation/.idea
+../donation/.vscode
