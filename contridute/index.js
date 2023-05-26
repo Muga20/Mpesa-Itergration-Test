@@ -8,7 +8,7 @@ const port = 5000;
 
 app.get('/', (req, res) => {
     // Handle the request here
-    res.send('Hello, world! This is the root route.');
+    res.send('Hello,This is the root route.');
   });
 
   

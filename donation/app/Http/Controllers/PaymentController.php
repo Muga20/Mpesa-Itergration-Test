@@ -17,8 +17,8 @@ class PaymentController extends Controller
 
     public function token()
     {
-        $consumerKey = 'AfpekwX1GS7AFIpwA7HOncXf4lCUW818';
-        $consumerSecret = 'A3vtjnKKAvVgMmJJ';
+        $consumerKey = '';
+        $consumerSecret = '';
         $url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
     
         $response = Http::withBasicAuth($consumerKey, $consumerSecret)->get($url);
@@ -32,8 +32,8 @@ class PaymentController extends Controller
     {
         $accessToken = $this->token();
     
-        $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
-        $PassKey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
+        $url = '';
+        $PassKey = '';
     
         $BusinessShortCode = 174379;
     
@@ -46,7 +46,7 @@ class PaymentController extends Controller
         $PartyB = 174379;
         $PhoneNumber = 254743051520;
     
-        $CallbackUrl = 'https://79ea-197-248-136-59.ngrok-free.app/payment/stkCallBack';
+        $CallbackUrl = '';
     
         $AccountReference = 'Donation for goods';
         $TransactionDesc = 'payment for goods';

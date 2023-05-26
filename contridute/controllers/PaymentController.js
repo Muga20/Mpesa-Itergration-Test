@@ -8,8 +8,8 @@ import Stkrequest from '../models/Stkrequest.js';
 
 export const initiateStkToken = async (req, res) => {
   try {
-    const consumerKey = 'AfpekwX1GS7AFIpwA7HOncXf4lCUW818';
-    const consumerSecret = 'A3vtjnKKAvVgMmJJ';
+    const consumerKey = '';
+    const consumerSecret = '';
     const url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
 
     try {
@@ -36,8 +36,8 @@ export const initiateStkToken = async (req, res) => {
 export const initiateStkPush = async () => {
   try {
     const accessToken = await initiateStkToken();
-    const url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
-    const PassKey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
+    const url = '';
+    const PassKey = '';
     const BusinessShortCode = '174379';
     const Timestamp = DateTime.now().toFormat('yyyyMMddHHmmss');
     const password = Buffer.from(`${BusinessShortCode}${PassKey}${Timestamp}`).toString('base64');
